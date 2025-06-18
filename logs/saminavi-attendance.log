@@ -2124,3 +2124,78 @@ Unconditional classes:
 
 
 2025-06-18 16:32:22,320 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-18 16:48:24,782 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2025-06-18 16:48:24,804 INFO o.a.j.l.DirectJDKLog [Thread-11] Stopping ProtocolHandler ["http-nio-9080"]
+2025-06-18 16:48:24,819 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-18 16:48:24,824 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
+2025-06-18 16:48:24,834 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
+2025-06-18 16:48:24,929 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Starting Saminavi Attendance Application...
+2025-06-18 16:48:30,796 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 28580 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-18 16:48:30,798 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-18 16:48:30,800 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-18 16:48:31,570 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-18 16:48:31,644 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2025-06-18 16:48:32,130 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-18 16:48:32,133 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-18 16:48:32,134 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-18 16:48:32,246 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-18 16:48:32,247 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1434 ms
+2025-06-18 16:48:32,342 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-18 16:48:32,405 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-18 16:48:32,409 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-18 16:48:32,421 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-18 16:48:32,427 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2025-06-18 16:48:32,531 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@8ebb50d
+2025-06-18 16:48:32,535 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2025-06-18 16:48:32,556 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-18 16:48:32,850 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-18 16:48:32,929 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-18 16:48:33,430 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72e03ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53d4871e, org.springframework.security.web.context.SecurityContextHolderFilter@2893f229, org.springframework.security.web.header.HeaderWriterFilter@2dda6046, org.springframework.web.filter.CorsFilter@2b27962, org.springframework.security.web.authentication.logout.LogoutFilter@33ae28b, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@36ab7a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dd4974e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63f21ce2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10841817, org.springframework.security.web.session.SessionManagementFilter@1859ee73, org.springframework.security.web.access.ExceptionTranslationFilter@1c253af7, org.springframework.security.web.access.intercept.AuthorizationFilter@498b65f6]
+2025-06-18 16:48:33,628 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-18 16:48:33,652 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-18 16:48:33,664 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 2.978 seconds (process running for 2440.912)
+2025-06-18 16:48:33,679 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-18 16:48:33,700 INFO c.s.a.S.c.DataInitializer [restartedMain] Employees already exist, skipping initialization.
+2025-06-18 16:48:33,704 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-06-18 16:48:33,704 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-18 17:21:53,677 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18 17:21:53,693 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-18 17:21:53,695 INFO c.z.h.HikariDataSource [Thread-15] HikariPool-4 - Shutdown initiated...
+2025-06-18 17:21:53,706 INFO c.z.h.HikariDataSource [Thread-15] HikariPool-4 - Shutdown completed.
+2025-06-18 17:21:53,805 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Starting Saminavi Attendance Application...
+2025-06-18 17:21:54,099 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 28580 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-18 17:21:54,099 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-18 17:21:54,099 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-18 17:21:54,813 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-18 17:21:54,863 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2025-06-18 17:21:55,163 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-18 17:21:55,163 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-18 17:21:55,163 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-18 17:21:55,230 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-18 17:21:55,230 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1115 ms
+2025-06-18 17:21:55,280 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-18 17:21:55,348 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-18 17:21:55,348 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-18 17:21:55,368 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-18 17:21:55,369 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2025-06-18 17:21:55,428 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@680b5d60
+2025-06-18 17:21:55,428 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2025-06-18 17:21:55,428 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-18 17:21:55,664 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-18 17:21:55,722 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-18 17:21:56,230 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61cae934, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@786af350, org.springframework.security.web.context.SecurityContextHolderFilter@3c1f86a0, org.springframework.security.web.header.HeaderWriterFilter@7ac29db9, org.springframework.web.filter.CorsFilter@291c6f03, org.springframework.security.web.authentication.logout.LogoutFilter@8422f62, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@54bc760e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d2a76c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@636b1d8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@244b3cec, org.springframework.security.web.session.SessionManagementFilter@38726350, org.springframework.security.web.access.ExceptionTranslationFilter@7798c396, org.springframework.security.web.access.intercept.AuthorizationFilter@6d3c0cc0]
+2025-06-18 17:21:56,344 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-18 17:21:56,362 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-18 17:21:56,377 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 2.553 seconds (process running for 4443.627)
+2025-06-18 17:21:56,393 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-18 17:21:56,393 INFO c.s.a.S.c.DataInitializer [restartedMain] Employees already exist, skipping initialization.
+2025-06-18 17:21:56,409 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-06-18 17:21:56,409 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
