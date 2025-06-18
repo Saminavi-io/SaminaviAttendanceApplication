@@ -1,0 +1,5 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.controller;
+
+public class AttendanceController {
+
+}

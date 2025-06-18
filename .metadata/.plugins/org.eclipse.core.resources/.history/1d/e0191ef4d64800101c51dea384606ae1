@@ -1,0 +1,56 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfiguration {
+
+    private final EmployeeService employeeService; // Use EmployeeService as UserDetailsService
+                                                    // (or create a dedicated UserDetailsService)
+
+    @Autowired
+    public SecurityConfig(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        // Configure authentication provider (using EmployeeService as UserDetailsService)
+        auth.userDetailsService(employeeService).passwordEncoder(passwordEncoder());
+    }
+
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .csrf().disable() // Disable CSRF for API-based applications
+            .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Use stateless sessions (e.g., for JWT)
+            .and()
+            .authorizeRequests()
+                .requestMatchers("/api/auth/**").permitAll() // Allow access to authentication endpoints
+                .requestMatchers("/api/attendance/**").authenticated() // Require authentication for attendance endpoints
+                .anyRequest().authenticated(); // Require authentication for any other request
+
+        // You might add a custom authentication filter here (e.g., for JWT)
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder(); // Use BCrypt for secure password hashing
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean(); // Expose AuthenticationManager as a Bean
+    }
+}

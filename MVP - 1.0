@@ -1,0 +1,63 @@
+MVP 1.0 Documentation: Employee Attendance Tracking Application
+
+1. Introduction
+
+This document outlines the core components and functionalities of the Minimum Viable Product (MVP) version 1.0 for an employee attendance tracking application. The application is built using a standard three-tier architecture: React for the frontend, Spring Boot for the backend, and PostgreSQL for the database. The primary goal of this MVP is to provide essential features for employees to record their work hours.
+
+2. Architecture
+
+Frontend: React will be used to build the user interface, handling user interactions and displaying attendance information.
+Backend: Spring Boot will serve as the application layer, managing business logic, API endpoints, and database interactions.
+Database: PostgreSQL will be used to store employee and attendance data.
+The frontend communicates with the backend via RESTful APIs.
+
+3. Core Features (MVP 1.0)
+
+Employee Authentication: Secure login functionality for employees to access the application.
+Clock-In/Clock-Out: Allows employees to record their start and end times for the workday.
+View Today's Attendance: Employees can view their own clock-in and clock-out times for the current day on their dashboard.
+4. API Endpoints (Spring Boot Backend)
+
+The following RESTful endpoints are included in MVP 1.0:
+
+POST /api/auth/login: Handles employee authentication. Takes username and password as input and returns a success indicator or token upon successful authentication.
+POST /api/attendance/clock-in: Records the clock-in time for an authenticated employee.
+POST /api/attendance/clock-out: Records the clock-out time for an authenticated employee, associating it with their most recent clock-in on the same day.
+GET /api/attendance/today: Retrieves the attendance record (clock-in and clock-out time) for the current day for the authenticated employee.
+5. Database Schema (PostgreSQL)
+
+The database schema for MVP 1.0 includes two tables:
+
+employees table:
+
+id (Primary Key, auto-incrementing)
+username (Unique, for login)
+password_hash (Stores securely hashed passwords)
+name (Employee's full name)
+employee_id (Unique company-assigned identifier)
+attendance table:
+
+id (Primary Key, auto-incrementing)
+employee_id (Foreign Key referencing employees.id)
+clock_in_time (Timestamp, marks the start of work)
+clock_out_time (Timestamp, marks the end of work; can be null initially)
+date (Date, for querying attendance on a specific day)
+6. Frontend Components (React)
+
+MVP 1.0 includes the following React components:
+
+Login Component: Provides a user interface for employees to log in. It will send authentication requests to the /api/auth/login endpoint.
+Employee Dashboard/Attendance Component: This is the main component for employees after logging in. It will:
+Display the employee's current attendance status (e.g., "Not Clocked In", "Clocked In at [Time]").
+Provide a "Clock In" button.
+Provide a "Clock Out" button (only visible when the employee is clocked in).
+Display today's attendance record fetched from the /api/attendance/today endpoint.
+7. Security Considerations
+
+Even for an MVP, basic security measures are crucial:
+
+Password Security: Passwords must be stored as secure hashes in the database.
+Authentication: Implement a secure authentication method (e.g., JWT or sessions) to protect backend endpoints.
+Input Validation: Validate all data received from the frontend on the backend to prevent vulnerabilities.
+HTTPS: Use HTTPS for all communication in production environments.
+This documentation provides a clear picture of the scope and key elements of MVP 1.0. As development progresses, further documentation will be needed for detailed implementation, testing, and deployment. The integration patterns described in the Building a ChatGPT-based AI bot using Spring Boot, React, and Hilla | Vaadin article can serve as a useful reference for connecting the Spring Boot backend and React frontend.

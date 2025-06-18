@@ -1,0 +1,63 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.service;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.EmployeeRepository;
+
+@Service
+public class EmployeeService implements UserDetailsService {
+
+	private final EmployeeRepository employeeRepository;
+    private final PasswordEncoder passwordEncoder; // Inject PasswordEncoder for secure password handling
+	
+    public EmployeeService(EmployeeRepository employeeRepository, PasswordEncoder passwordEncoder) {
+		super();
+		this.employeeRepository = employeeRepository;
+		this.passwordEncoder = passwordEncoder;
+	}
+    
+ // Method to register a new employee
+    public Employee registerEmployee(String username, String password, String name, String employeeId) {
+        // Basic validation (more comprehensive validation should be done in controllers or validation classes)
+        if (employeeRepository.findByUsername(username) != null) {
+            throw new RuntimeException("Username already exists"); // Or a custom exception
+        }
+        if (employeeRepository.findByEmployeeId(employeeId) != null) {
+            throw new RuntimeException("Employee ID already exists"); // Or a custom exception
+        }
+        Employee employee = new Employee(username, passwordEncoder.encode(password), name, employeeId);
+        return employeeRepository.save(employee); // Save the new employee to the database
+    }
+    // Method to find an employee by username for authentication
+    public Employee findByUsername(String username) {
+        return employeeRepository.findByUsername(username);
+    }
+    // Method to find an employee by ID
+    public Optional<Employee> findById(Long id) {
+        return employeeRepository.findById(id);
+    }
+    
+    @Override // Implement loadUserByUsername from UserDetailsService
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Employee employee = employeeRepository.findByUsername(username);
+        if (employee == null) {
+            throw new UsernameNotFoundException("Employee not found with username: " + username);
+        }
+        // Return Spring Security's UserDetails object (you might need to create a custom UserDetails implementation)
+        return new org.springframework.security.core.userdetails.User(
+                employee.getUsername(),
+                employee.getPasswordHash(),
+                new ArrayList<>() // Provide authorities/roles here if applicable
+        );
+    }
+    // You can add other employee-related business logic here
+
+}

@@ -1,0 +1,49 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.ProviderManager;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+    private final EmployeeService employeeService;
+    public SecurityConfig(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+            .csrf(csrf -> csrf.disable()) // Use lambda for configuring CSRF
+            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Use lambda for configuring session management
+            .authorizeHttpRequests(authz -> authz // Use authorizeHttpRequests instead of authorizeRequests
+                .requestMatchers("/api/auth/**").permitAll() // Allow access to authentication endpoints
+                .requestMatchers("/api/attendance/**").authenticated() // Require authentication for attendance endpoints
+                .anyRequest().authenticated() // Require authentication for any other request
+            );
+        // You might add a custom authentication filter here (e.g., for JWT)
+        return http.build();
+    }
+    @Bean
+    public AuthenticationManager authenticationManager(
+            PasswordEncoder passwordEncoder) {
+        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+        authenticationProvider.setUserDetailsService(employeeService);
+        authenticationProvider.setPasswordEncoder(passwordEncoder);
+        return new ProviderManager(authenticationProvider);
+    }
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+}

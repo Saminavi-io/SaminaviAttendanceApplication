@@ -1,0 +1,8 @@
+spring.application.name=SaminaviAttendanceApplication
+server.port=9080
+logging.level.org.springframework.boot.SpringApplication=debug
+spring.datasource.url=jdbc:postgresql://localhost:5432/attendance_app
+spring.datasource.username=postgres
+spring.datasource.password=divisha
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update

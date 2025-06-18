@@ -1,0 +1,70 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.service;
+
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional; // Use @Transactional for methods that modify data
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Attendance;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.AttendanceRepository;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.EmployeeRepository;
+
+@Service // Marks this class as a Spring service
+public class AttendanceService {
+
+    private final AttendanceRepository attendanceRepository;
+    private final EmployeeRepository employeeRepository; // Inject EmployeeRepository if needed
+
+    
+    public AttendanceService(AttendanceRepository attendanceRepository, EmployeeRepository employeeRepository) {
+        this.attendanceRepository = attendanceRepository;
+        this.employeeRepository = employeeRepository;
+    }
+
+    // Method to record clock-in
+    @Transactional // Mark methods that modify data with @Transactional
+    public Attendance clockIn(Employee employee) {
+        LocalDate today = LocalDate.now();
+        // Check if the employee has already clocked in today
+        Attendance existingAttendance = attendanceRepository.findByEmployeeAndDate(employee, today);
+        if (existingAttendance != null) {
+            throw new RuntimeException("Employee has already clocked in today"); // Or a custom exception
+        }
+
+        Attendance attendance = new Attendance(employee, LocalDateTime.now(), today);
+        return attendanceRepository.save(attendance); // Save the clock-in record
+    }
+
+    // Method to record clock-out
+    @Transactional // Mark methods that modify data with @Transactional
+    public Attendance clockOut(Employee employee) {
+        LocalDate today = LocalDate.now();
+        // Find the most recent attendance record for today that doesn't have a clock-out time
+        Attendance attendance = attendanceRepository.findByEmployeeAndDate(employee, today);
+
+        if (attendance == null || attendance.getClockOutTime() != null) {
+            throw new RuntimeException("Cannot clock out. Employee is not clocked in or already clocked out today"); // Or a custom exception
+        }
+
+        attendance.setClockOutTime(LocalDateTime.now());
+        return attendanceRepository.save(attendance); // Update the attendance record
+    }
+
+    // Method to get today's attendance for an employee
+    public Attendance getTodayAttendance(Employee employee) {
+        LocalDate today = LocalDate.now();
+        return attendanceRepository.findByEmployeeAndDate(employee, today);
+    }
+
+    // Method to get all attendance records for an employee (for future features like attendance history)
+    public List<Attendance> getAttendanceHistory(Employee employee) {
+        return attendanceRepository.findByEmployee(employee);
+    }
+
+    // You can add other attendance-related business logic here
+}

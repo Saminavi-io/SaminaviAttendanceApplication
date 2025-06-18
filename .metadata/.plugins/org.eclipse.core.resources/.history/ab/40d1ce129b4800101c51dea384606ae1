@@ -1,0 +1,2 @@
+spring.application.name=SaminaviAttendanceApplication
+logging.level.org.springframework.boot.SpringApplication=debug
