@@ -1,0 +1,47 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.service;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.EmployeeRepository;
+
+@Service
+public class EmployeeService implements UserDetailsService {
+
+    private final EmployeeRepository employeeRepository;
+    private final PasswordEncoder passwordEncoder;
+
+    @Autowired
+    public EmployeeService(EmployeeRepository employeeRepository, PasswordEncoder passwordEncoder) {
+        this.employeeRepository = employeeRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional<Employee> employeeOptional = employeeRepository.findByUsername(username);
+        Employee employee = employeeOptional.orElseThrow(() -> new UsernameNotFoundException("User not found with username: " + username));
+        // Assuming Employee model implements UserDetails or you have a UserDetails implementation
+        // This is a basic example, you might need to adapt it based on your Employee model
+        return new org.springframework.security.core.userdetails.User(employee.getUsername(), employee.getPassword(), new ArrayList<>());
+    }
+
+    // Add other service methods here as needed, e.g., saving employees, etc.
+    public Employee save(Employee employee) {
+        // Encode the password before saving
+        employee.setPassword(passwordEncoder.encode(employee.getPassword()));
+        return employeeRepository.save(employee);
+    }
+    // You can add other employee-related business logic here
+}
+
+ 
+

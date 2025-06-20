@@ -1,0 +1,67 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto;
+
+// Create simple DTO classes for request bodies (LoginRequest, RegistrationRequest)
+class LoginRequest {
+    private String username;
+    private String password;
+
+    // Getters and setters
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+
+// class RegistrationRequest {
+//     private String username;
+//     private String password;
+//     private String name;
+//     private String employeeId;
+
+//     // Getters and setters
+//     public String getUsername() {
+//         return username;
+//     }
+
+//     public void setUsername(String username) {
+//         this.username = username;
+//     I have access to the following user provided documents.
+
+// Attached Link: `The GFG Java Backend Development course : r/developersIndia[https://www.reddit.com/r/developersIndia/comments/14carxx/the_gfg_java_backend_development_course/]`
+// Attached Link: `Is it pointless to make desktop apps (i.e. using JavaFX, swing) for ...[https://www.reddit.com/r/learnjava/comments/1e2oe1g/is_it_pointless_to_make_desktop_apps_ie_using/]`
+// Attached Link: `Building a ChatGPT-based AI bot using Spring Boot, React, and ...[https://vaadin.com/blog/ai-chatbot-in-java/building-a-chatgpt-ai-bot-using-spring-boot-react-and-hilla]`
+// Attached Link: `https://cdn.dribbble.com/userupload/37084846/file/original-b0835ca90b485534e4fce761c6a16095.png?resize=1024x768&vertical=center[https://cdn.dribbble.com/userupload/37084846/file/original-b0835ca90b485534e4fce761c6a16095.png?resize=1024x768&vertical=center]`
+
+//     }
+
+//     public void setPassword(String password) {
+//         this.password = password;
+//     }
+
+//     public String getName() {
+//         return name;
+//     }
+
+//     public void setName(String name) {
+//         this.name = name;
+//     }
+
+//     public String getEmployeeId() {
+//         return employeeId;
+//     }
+
+//     public void setEmployeeId(String employeeId) {
+//         this.employeeId = employeeId;
+//     }
+// }

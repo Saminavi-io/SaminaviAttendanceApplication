@@ -1,0 +1,16 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long>{
+
+    // Spring Data JPA will automatically generate the implementation for this method
+    Employee findByUsername(String username);
+    // You can add custom query methods here if needed
+    // For example, to find an employee by employeeId
+    Employee findByEmployeeId(String employeeId);
+}

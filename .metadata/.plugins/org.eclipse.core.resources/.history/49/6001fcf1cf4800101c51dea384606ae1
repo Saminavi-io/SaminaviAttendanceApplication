@@ -1,0 +1,58 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Attendance {
+	@Id
+	private long id;
+	@Column
+	private long employee_id;
+	@Column
+	private LocalDateTime clockIntTime;
+	@Column
+	private LocalDateTime clockOutTime;
+	@Column
+	private LocalDate date;
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public long getEmployee_id() {
+		return employee_id;
+	}
+	public void setEmployee_id(long employee_id) {
+		this.employee_id = employee_id;
+	}
+	public LocalDateTime getClockIntTime() {
+		return clockIntTime;
+	}
+	public void setClockIntTime(LocalDateTime clockIntTime) {
+		this.clockIntTime = clockIntTime;
+	}
+	public LocalDateTime getClockOutTime() {
+		return clockOutTime;
+	}
+	public void setClockOutTime(LocalDateTime clockOutTime) {
+		this.clockOutTime = clockOutTime;
+	}
+	public LocalDate getDate() {
+		return date;
+	}
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+	
+	
+	
+	
+
+} 

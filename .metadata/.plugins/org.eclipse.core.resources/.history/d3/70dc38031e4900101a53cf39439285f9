@@ -1,0 +1,10 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt;
+
+public class JwtUtil {
+
+	public String extractUsername(String jwt) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

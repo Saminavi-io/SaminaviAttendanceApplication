@@ -1,0 +1,131 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.controller;
+
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/auth") // Base path for authentication endpoints
+public class AuthController {
+
+    private final AuthenticationManager authenticationManager;
+    private final EmployeeService employeeService;
+
+    @Autowired
+    public AuthController(AuthenticationManager authenticationManager, EmployeeService employeeService) {
+        this.authenticationManager = authenticationManager;
+        this.employeeService = employeeService;
+    }
+
+    @PostMapping("/login") // Handles login requests
+    public ResponseEntity<String> authenticateUser(@RequestBody LoginRequest loginRequest) {
+        // Authenticate the user using Spring Security's AuthenticationManager
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        loginRequest.getUsername(),
+                        loginRequest.getPassword()
+                )
+        );
+
+        // Set the authenticated user in the security context
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        // You can generate a JWT token here and return it to the frontend
+        // For MVP, you might just return a success message or user details
+
+        return new ResponseEntity<>("User logged in successfully", HttpStatus.OK);
+    }
+
+    // You might add an endpoint for employee registration here for the MVP
+    // @PostMapping("/register")
+    // public ResponseEntity<String> registerUser(@RequestBody RegistrationRequest registrationRequest) {
+    //     try {
+    //         employeeService.registerEmployee(
+    //                 registrationRequest.getUsername(),
+    //                 registrationRequest.getPassword(),
+    //                 registrationRequest.getName(),
+    //                 registrationRequest.getEmployeeId()
+    //         );
+    //         return new ResponseEntity<>("User registered successfully", HttpStatus.CREATED);
+    //     } catch (RuntimeException e) {
+    //         return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+    //     }
+    // }
+}
+
+// Create simple DTO classes for request bodies (LoginRequest, RegistrationRequest)
+class LoginRequest {
+    private String username;
+    private String password;
+
+    // Getters and setters
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+
+// class RegistrationRequest {
+//     private String username;
+//     private String password;
+//     private String name;
+//     private String employeeId;
+
+//     // Getters and setters
+//     public String getUsername() {
+//         return username;
+//     }
+
+//     public void setUsername(String username) {
+//         this.username = username;
+//     I have access to the following user provided documents.
+
+// Attached Link: `The GFG Java Backend Development course : r/developersIndia[https://www.reddit.com/r/developersIndia/comments/14carxx/the_gfg_java_backend_development_course/]`
+// Attached Link: `Is it pointless to make desktop apps (i.e. using JavaFX, swing) for ...[https://www.reddit.com/r/learnjava/comments/1e2oe1g/is_it_pointless_to_make_desktop_apps_ie_using/]`
+// Attached Link: `Building a ChatGPT-based AI bot using Spring Boot, React, and ...[https://vaadin.com/blog/ai-chatbot-in-java/building-a-chatgpt-ai-bot-using-spring-boot-react-and-hilla]`
+// Attached Link: `https://cdn.dribbble.com/userupload/37084846/file/original-b0835ca90b485534e4fce761c6a16095.png?resize=1024x768&vertical=center[https://cdn.dribbble.com/userupload/37084846/file/original-b0835ca90b485534e4fce761c6a16095.png?resize=1024x768&vertical=center]`
+
+//     }
+
+//     public void setPassword(String password) {
+//         this.password = password;
+//     }
+
+//     public String getName() {
+//         return name;
+//     }
+
+//     public void setName(String name) {
+//         this.name = name;
+//     }
+
+//     public String getEmployeeId() {
+//         return employeeId;
+//     }
+
+//     public void setEmployeeId(String employeeId) {
+//         this.employeeId = employeeId;
+//     }
+// }

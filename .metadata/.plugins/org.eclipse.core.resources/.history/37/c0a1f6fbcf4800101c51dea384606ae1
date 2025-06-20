@@ -1,0 +1,5 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository;
+
+public interface EmployeeRepository {
+
+}

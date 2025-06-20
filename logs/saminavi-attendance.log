@@ -1,0 +1,1986 @@
+2025-06-20 09:59:00,718 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h4m9s848ms592µs601ns).
+2025-06-20 10:09:59,649 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-20 10:09:59,708 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 39560 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-20 10:09:59,710 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-20 10:09:59,715 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-20 10:09:59,779 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-20 10:09:59,779 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-20 10:10:00,706 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20 10:10:00,787 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2025-06-20 10:10:01,714 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-20 10:10:01,730 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:10:01,734 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-20 10:10:01,735 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-20 10:10:01,831 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-20 10:10:01,833 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2052 ms
+2025-06-20 10:10:01,972 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-20 10:10:02,154 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20 10:10:02,236 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-20 10:10:02,285 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-20 10:10:02,592 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20 10:10:02,618 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-20 10:10:02,797 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d16df42
+2025-06-20 10:10:02,799 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-20 10:10:02,835 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20 10:10:03,764 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20 10:10:03,900 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:10:04,301 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-20 10:10:05,208 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76f38c8c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2294931, org.springframework.security.web.context.SecurityContextHolderFilter@2d746dac, org.springframework.security.web.header.HeaderWriterFilter@70ae5e50, org.springframework.web.filter.CorsFilter@47d80e9e, org.springframework.security.web.authentication.logout.LogoutFilter@7005b4c3, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@1875a508, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43605f35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41b64659, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e776ba, org.springframework.security.web.session.SessionManagementFilter@1f47dd3e, org.springframework.security.web.access.ExceptionTranslationFilter@3195b237, org.springframework.security.web.access.intercept.AuthorizationFilter@6282d586]
+2025-06-20 10:10:05,444 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-20 10:10:05,461 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:10:05,487 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-20 10:10:05,500 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 6.287 seconds (process running for 6.754)
+2025-06-20 10:10:05,601 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-20 10:10:05,609 INFO c.s.a.S.c.DataInitializer [restartedMain] Initializing sample employees...
+2025-06-20 10:10:05,697 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:10:05,704 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.employee_id=?
+2025-06-20 10:10:05,712 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2025-06-20 10:10:05,823 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    insert 
+    into
+        employees
+        (email, employee_id, name, password_hash, username) 
+    values
+        (?, ?, ?, ?, ?)
+2025-06-20 10:10:05,859 INFO c.s.a.S.c.DataInitializer [restartedMain] Created employee: Krishna G (EMP007)
+2025-06-20 10:10:05,862 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:10:05,866 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.employee_id=?
+2025-06-20 10:10:05,871 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2025-06-20 10:10:05,883 INFO c.s.a.S.c.DataInitializer [restartedMain] Employee with email sridhar.uppu@saminavi.io already exists, skipping.
+2025-06-20 10:10:05,885 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:10:05,890 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.employee_id=?
+2025-06-20 10:10:05,896 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2025-06-20 10:10:05,901 INFO c.s.a.S.c.DataInitializer [restartedMain] Employee with email sridhar.uppu@saminavi.io already exists, skipping.
+2025-06-20 10:10:05,902 INFO c.s.a.S.c.DataInitializer [restartedMain] Sample employees created successfully!
+2025-06-20 10:10:05,904 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-20 10:10:35,469 INFO o.a.j.l.DirectJDKLog [http-nio-9080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 10:10:35,471 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-20 10:10:35,474 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Completed initialization in 2 ms
+2025-06-20 10:10:35,516 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing OPTIONS /api/auth/login
+2025-06-20 10:10:35,567 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing POST /api/auth/login
+2025-06-20 10:10:35,580 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:10:35,584 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured POST /api/auth/login
+2025-06-20 10:10:35,856 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:10:35,981 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-3] Failed to find user 'sridhar.uppu'
+2025-06-20 10:13:56,871 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing POST /api/auth/login
+2025-06-20 10:13:56,877 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:13:56,879 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Secured POST /api/auth/login
+2025-06-20 10:13:56,891 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:13:57,043 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-5] Failed to find user 'sridhar.uppu'
+2025-06-20 10:14:08,531 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/auth/login
+2025-06-20 10:14:08,538 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:14:08,541 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/auth/login
+2025-06-20 10:14:08,553 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:14:08,677 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-2] Failed to find user 'sridhar.uppu'
+2025-06-20 10:15:00,506 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing POST /api/auth/login
+2025-06-20 10:15:00,509 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:15:00,510 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured POST /api/auth/login
+2025-06-20 10:15:00,515 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:15:00,643 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-6] Failed to find user 'sridhar.uppu'
+2025-06-20 10:19:20,626 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Securing POST /api/auth/login
+2025-06-20 10:19:20,631 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:20,632 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Secured POST /api/auth/login
+2025-06-20 10:19:20,641 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:20,761 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-8] Failed to find user 'sridhar.uppu'
+2025-06-20 10:19:36,506 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing POST /api/auth/login
+2025-06-20 10:19:36,510 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:36,511 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured POST /api/auth/login
+2025-06-20 10:19:36,517 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:36,653 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-10] Failed to find user 'aasrith'
+2025-06-20 10:19:37,309 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing POST /api/auth/login
+2025-06-20 10:19:37,314 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:37,315 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Secured POST /api/auth/login
+2025-06-20 10:19:37,322 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:37,460 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-9] Failed to find user 'aasrith'
+2025-06-20 10:19:37,508 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:19:37,514 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:37,515 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:19:37,522 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:37,640 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'aasrith'
+2025-06-20 10:19:37,941 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing POST /api/auth/login
+2025-06-20 10:19:37,946 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:37,948 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured POST /api/auth/login
+2025-06-20 10:19:37,958 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:38,075 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-3] Failed to find user 'aasrith'
+2025-06-20 10:19:38,137 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing POST /api/auth/login
+2025-06-20 10:19:38,140 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:38,141 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Secured POST /api/auth/login
+2025-06-20 10:19:38,148 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:38,275 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-4] Failed to find user 'aasrith'
+2025-06-20 10:19:38,350 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing POST /api/auth/login
+2025-06-20 10:19:38,354 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:38,356 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Secured POST /api/auth/login
+2025-06-20 10:19:38,364 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:38,490 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-5] Failed to find user 'aasrith'
+2025-06-20 10:19:39,346 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/auth/login
+2025-06-20 10:19:39,351 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:39,353 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/auth/login
+2025-06-20 10:19:39,361 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:39,479 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-2] Failed to find user 'aasrith'
+2025-06-20 10:19:39,581 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing POST /api/auth/login
+2025-06-20 10:19:39,583 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:39,584 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured POST /api/auth/login
+2025-06-20 10:19:39,591 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:39,716 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-6] Failed to find user 'aasrith'
+2025-06-20 10:19:39,783 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing POST /api/auth/login
+2025-06-20 10:19:39,787 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:39,790 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Secured POST /api/auth/login
+2025-06-20 10:19:39,797 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:39,915 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-7] Failed to find user 'aasrith'
+2025-06-20 10:19:40,877 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Securing POST /api/auth/login
+2025-06-20 10:19:40,880 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:40,881 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Secured POST /api/auth/login
+2025-06-20 10:19:40,884 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:40,993 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-8] Failed to find user 'aasrith'
+2025-06-20 10:19:41,264 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing POST /api/auth/login
+2025-06-20 10:19:41,269 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:41,270 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured POST /api/auth/login
+2025-06-20 10:19:41,275 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:41,403 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-10] Failed to find user 'aasrith'
+2025-06-20 10:19:41,507 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing POST /api/auth/login
+2025-06-20 10:19:41,512 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:41,513 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Secured POST /api/auth/login
+2025-06-20 10:19:41,524 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:41,637 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-9] Failed to find user 'aasrith'
+2025-06-20 10:19:41,762 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:19:41,765 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:41,766 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:19:41,771 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:41,888 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'aasrith'
+2025-06-20 10:19:41,987 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing POST /api/auth/login
+2025-06-20 10:19:41,990 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:19:41,992 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured POST /api/auth/login
+2025-06-20 10:19:42,001 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:19:42,130 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-3] Failed to find user 'aasrith'
+2025-06-20 10:21:51,831 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-20 10:21:51,884 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 45772 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-20 10:21:51,885 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-20 10:21:51,887 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-20 10:21:51,946 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-20 10:21:51,947 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-20 10:21:52,860 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20 10:21:52,933 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2025-06-20 10:21:53,734 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-20 10:21:53,753 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:21:53,757 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-20 10:21:53,758 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-20 10:21:53,832 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-20 10:21:53,835 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1885 ms
+2025-06-20 10:21:53,944 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-20 10:21:54,094 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20 10:21:54,182 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-20 10:21:54,243 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-20 10:21:54,493 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20 10:21:54,532 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-20 10:21:54,727 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@400c27e5
+2025-06-20 10:21:54,730 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-20 10:21:54,761 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20 10:21:55,553 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20 10:21:55,641 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:21:55,918 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-20 10:21:56,880 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47f3d753, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b100948, org.springframework.security.web.context.SecurityContextHolderFilter@27be367f, org.springframework.security.web.header.HeaderWriterFilter@1f47dd3e, org.springframework.web.filter.CorsFilter@40fe6eb2, org.springframework.security.web.authentication.logout.LogoutFilter@76f38c8c, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@1ef302ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44b0763b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f4ec798, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23497a00, org.springframework.security.web.session.SessionManagementFilter@7439091f, org.springframework.security.web.access.ExceptionTranslationFilter@1daa40b4, org.springframework.security.web.access.intercept.AuthorizationFilter@3235c94c]
+2025-06-20 10:21:57,131 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-20 10:21:57,151 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:21:57,175 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-20 10:21:57,188 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 5.798 seconds (process running for 6.388)
+2025-06-20 10:21:57,293 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-20 10:21:57,308 INFO c.s.a.S.c.DataInitializer [restartedMain] Employees already exist, skipping initialization.
+2025-06-20 10:21:57,310 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-20 10:22:30,455 INFO o.a.j.l.DirectJDKLog [http-nio-9080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 10:22:30,457 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-20 10:22:30,459 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Completed initialization in 1 ms
+2025-06-20 10:22:30,501 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:22:30,542 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:22:30,545 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:22:30,951 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:22:31,092 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'sridhasr.uppu'
+2025-06-20 10:23:04,170 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/auth/login
+2025-06-20 10:23:04,173 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:23:04,175 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/auth/login
+2025-06-20 10:23:04,180 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:23:04,299 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-2] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:49,474 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing POST /api/auth/login
+2025-06-20 10:26:49,479 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:49,481 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Secured POST /api/auth/login
+2025-06-20 10:26:49,491 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:49,616 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-4] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:51,838 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing POST /api/auth/login
+2025-06-20 10:26:51,843 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:51,844 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Secured POST /api/auth/login
+2025-06-20 10:26:51,855 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:51,970 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-5] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:52,013 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing POST /api/auth/login
+2025-06-20 10:26:52,018 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:52,020 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured POST /api/auth/login
+2025-06-20 10:26:52,029 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:52,146 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-6] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:52,246 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing POST /api/auth/login
+2025-06-20 10:26:52,250 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:52,251 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Secured POST /api/auth/login
+2025-06-20 10:26:52,261 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:52,386 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-7] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:52,459 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Securing POST /api/auth/login
+2025-06-20 10:26:52,463 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:52,465 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Secured POST /api/auth/login
+2025-06-20 10:26:52,476 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:52,623 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-8] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:52,708 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing POST /api/auth/login
+2025-06-20 10:26:52,713 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:52,714 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Secured POST /api/auth/login
+2025-06-20 10:26:52,723 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:52,838 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-9] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:52,933 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing POST /api/auth/login
+2025-06-20 10:26:52,938 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:52,940 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured POST /api/auth/login
+2025-06-20 10:26:52,951 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:53,078 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-10] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:53,111 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:26:53,116 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:53,117 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:26:53,123 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:53,243 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'sridhar.uppu'
+2025-06-20 10:26:53,291 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/auth/login
+2025-06-20 10:26:53,296 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:26:53,298 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/auth/login
+2025-06-20 10:26:53,305 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:26:53,424 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-2] Failed to find user 'sridhar.uppu'
+2025-06-20 10:30:14,544 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing POST /api/auth/login
+2025-06-20 10:30:14,548 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:30:14,549 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Secured POST /api/auth/login
+2025-06-20 10:30:14,561 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:30:14,684 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-4] Failed to find user 'sridhar.uppu'
+2025-06-20 10:30:17,213 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing POST /api/auth/login
+2025-06-20 10:30:17,216 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:30:17,218 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Secured POST /api/auth/login
+2025-06-20 10:30:17,226 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:30:17,342 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-5] Failed to find user 'sridhar.uppu'
+2025-06-20 10:30:37,753 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing POST /api/auth/login
+2025-06-20 10:30:37,756 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:30:37,758 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured POST /api/auth/login
+2025-06-20 10:30:37,767 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:30:37,883 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-6] Failed to find user 'asssrottyh'
+2025-06-20 10:39:57,692 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-20 10:39:57,750 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 19576 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-20 10:39:57,751 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-20 10:39:57,752 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-20 10:39:57,795 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-20 10:39:57,796 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-20 10:39:58,622 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20 10:39:58,683 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-06-20 10:39:59,558 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-20 10:39:59,576 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:39:59,580 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-20 10:39:59,581 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-20 10:39:59,645 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-20 10:39:59,647 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1849 ms
+2025-06-20 10:39:59,762 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-20 10:39:59,938 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20 10:40:00,084 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-20 10:40:00,154 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-20 10:40:00,421 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20 10:40:00,469 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-20 10:40:00,700 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5749afb4
+2025-06-20 10:40:00,702 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-20 10:40:00,736 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20 10:40:01,655 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20 10:40:01,725 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:40:02,117 INFO o.s.d.j.r.q.QueryEnhancerFactory [restartedMain] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-20 10:40:02,980 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20ecab09, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61a03fe0, org.springframework.security.web.context.SecurityContextHolderFilter@1a5ab1da, org.springframework.security.web.header.HeaderWriterFilter@3195b237, org.springframework.web.filter.CorsFilter@76f38c8c, org.springframework.security.web.authentication.logout.LogoutFilter@2c5d1418, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@227eccfd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d746dac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cfbeb11, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2294931, org.springframework.security.web.session.SessionManagementFilter@1daa40b4, org.springframework.security.web.access.ExceptionTranslationFilter@61817a95, org.springframework.security.web.access.intercept.AuthorizationFilter@77a6d569]
+2025-06-20 10:40:03,227 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-20 10:40:03,247 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:40:03,284 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-20 10:40:03,293 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 6.029 seconds (process running for 6.561)
+2025-06-20 10:40:03,404 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-20 10:40:03,415 INFO c.s.a.S.c.DataInitializer [restartedMain] Employees already exist, skipping initialization.
+2025-06-20 10:40:03,417 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-20 10:40:06,003 INFO o.a.j.l.DirectJDKLog [http-nio-9080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 10:40:06,004 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-20 10:40:06,006 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Completed initialization in 1 ms
+2025-06-20 10:40:06,031 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:40:06,052 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:06,054 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:40:06,235 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:06,296 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:07,435 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/auth/login
+2025-06-20 10:40:07,438 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:07,439 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/auth/login
+2025-06-20 10:40:07,443 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:07,506 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-2] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:07,696 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing POST /api/auth/login
+2025-06-20 10:40:07,699 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:07,700 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Secured POST /api/auth/login
+2025-06-20 10:40:07,705 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:07,765 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-4] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:07,954 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing POST /api/auth/login
+2025-06-20 10:40:07,959 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:07,961 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured POST /api/auth/login
+2025-06-20 10:40:07,967 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:08,045 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-3] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:08,170 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing POST /api/auth/login
+2025-06-20 10:40:08,172 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:08,172 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Secured POST /api/auth/login
+2025-06-20 10:40:08,175 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:08,236 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-5] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:08,380 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing POST /api/auth/login
+2025-06-20 10:40:08,382 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:08,384 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Secured POST /api/auth/login
+2025-06-20 10:40:08,388 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:08,450 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-7] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:08,574 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing POST /api/auth/login
+2025-06-20 10:40:08,579 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:08,580 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured POST /api/auth/login
+2025-06-20 10:40:08,585 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:08,653 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-6] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:08,776 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Securing POST /api/auth/login
+2025-06-20 10:40:08,782 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:08,784 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Secured POST /api/auth/login
+2025-06-20 10:40:08,792 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:08,865 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-8] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:09,000 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing POST /api/auth/login
+2025-06-20 10:40:09,004 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:09,006 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Secured POST /api/auth/login
+2025-06-20 10:40:09,012 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:09,099 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-9] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:09,207 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing POST /api/auth/login
+2025-06-20 10:40:09,211 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:09,212 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured POST /api/auth/login
+2025-06-20 10:40:09,215 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:09,282 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-10] Failed to find user 'EDSRFHGY'
+2025-06-20 10:40:09,440 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:40:09,444 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:40:09,446 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:40:09,454 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:40:09,603 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'EDSRFHGY'
+2025-06-20 10:45:16,131 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing OPTIONS /api/auth/login
+2025-06-20 10:45:16,139 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing POST /api/auth/login
+2025-06-20 10:45:16,144 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:45:16,147 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured POST /api/auth/login
+2025-06-20 10:45:16,158 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:45:16,285 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-3] Failed to find user 'CXVZ'
+2025-06-20 10:46:28,816 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing OPTIONS /api/auth/login
+2025-06-20 10:46:28,823 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing POST /api/auth/login
+2025-06-20 10:46:28,826 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:46:28,828 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured POST /api/auth/login
+2025-06-20 10:46:28,841 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:46:28,956 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-6] Failed to find user 'dfhg'
+2025-06-20 10:47:30,738 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing OPTIONS /api/auth/register
+2025-06-20 10:47:30,743 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing POST /api/auth/register
+2025-06-20 10:47:30,747 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:47:30,748 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured POST /api/auth/register
+2025-06-20 10:47:30,762 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:47:30,776 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2025-06-20 10:48:06,963 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/register
+2025-06-20 10:48:06,965 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:48:06,966 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/register
+2025-06-20 10:48:06,966 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:06,983 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2025-06-20 10:48:06,996 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0
+2025-06-20 10:48:07,187 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    insert 
+    into
+        employees
+        (email, employee_id, name, password_hash, username) 
+    values
+        (?, ?, ?, ?, ?)
+2025-06-20 10:48:15,324 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/auth/login
+2025-06-20 10:48:15,328 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:48:15,330 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/auth/login
+2025-06-20 10:48:15,336 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,459 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-2] Authenticated user
+2025-06-20 10:48:15,592 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing OPTIONS /api/attendance/history
+2025-06-20 10:48:15,594 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing OPTIONS /api/attendance/today
+2025-06-20 10:48:15,594 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing OPTIONS /api/attendance/today
+2025-06-20 10:48:15,594 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing OPTIONS /api/attendance/history
+2025-06-20 10:48:15,598 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Securing GET /api/attendance/today
+2025-06-20 10:48:15,598 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing GET /api/attendance/history
+2025-06-20 10:48:15,668 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,668 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,688 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Secured GET /api/attendance/today
+2025-06-20 10:48:15,688 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured GET /api/attendance/history
+2025-06-20 10:48:15,696 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,697 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,725 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2025-06-20 10:48:15,725 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:48:15,744 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing GET /api/attendance/history
+2025-06-20 10:48:15,746 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing GET /api/attendance/today
+2025-06-20 10:48:15,756 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,757 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,776 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured GET /api/attendance/today
+2025-06-20 10:48:15,781 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Secured GET /api/attendance/history
+2025-06-20 10:48:15,781 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,786 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:15,797 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:48:15,798 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2025-06-20 10:48:17,779 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing OPTIONS /api/attendance/clock-in
+2025-06-20 10:48:17,788 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Securing POST /api/attendance/clock-in
+2025-06-20 10:48:17,804 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:17,825 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-2] Secured POST /api/attendance/clock-in
+2025-06-20 10:48:17,831 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:17,845 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:48:17,882 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-2] 
+    insert 
+    into
+        attendance
+        (clock_in_time, clock_out_time, date, employee_id) 
+    values
+        (?, ?, ?, ?)
+2025-06-20 10:48:17,900 INFO c.s.a.S.s.EmailService [EmailAsync-1] Sending email to: sridhar.uppu@saminavi.io with subject: Clock In Confirmation - sridhar uppu
+2025-06-20 10:48:17,904 INFO c.s.a.S.s.EmailService [EmailAsync-2] Sending email to: hr@saminavi.io with subject: Employee Clock In - sridhar uppu
+2025-06-20 10:48:17,905 INFO c.s.a.S.s.NotificationService [http-nio-9080-exec-2] Clock in notifications sent for employee: sridhar.uppu
+2025-06-20 10:48:17,906 INFO c.s.a.S.s.EmailService [EmailAsync-3] Sending email to: swetha@saminavi.io with subject: Team Member Clock In - sridhar uppu
+2025-06-20 10:48:17,926 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing GET /api/attendance/today
+2025-06-20 10:48:17,926 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing GET /api/attendance/history
+2025-06-20 10:48:17,945 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:17,946 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:17,974 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured GET /api/attendance/today
+2025-06-20 10:48:17,978 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Secured GET /api/attendance/history
+2025-06-20 10:48:17,982 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:17,986 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:18,003 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:48:18,011 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2025-06-20 10:48:18,032 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.id=?
+2025-06-20 10:48:18,032 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.id=?
+2025-06-20 10:48:18,092 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9080-exec-3] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee.attendanceRecords: could not initialize proxy - no Session]
+2025-06-20 10:48:18,092 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9080-exec-4] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee.attendanceRecords: could not initialize proxy - no Session]
+2025-06-20 10:48:18,109 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing GET /error
+2025-06-20 10:48:18,109 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing GET /error
+2025-06-20 10:48:18,110 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:48:18,110 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:48:18,114 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-9080-exec-4] Pre-authenticated entry point called. Rejecting access
+2025-06-20 10:48:18,114 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-9080-exec-3] Pre-authenticated entry point called. Rejecting access
+2025-06-20 10:48:20,914 INFO c.s.a.S.s.EmailService [EmailAsync-1] Email sent successfully to: sridhar.uppu@saminavi.io
+2025-06-20 10:48:20,918 INFO c.s.a.S.s.AttendanceService [EmailAsync-1] Clock in email sent successfully to employee: sridhar.uppu
+2025-06-20 10:48:21,028 ERROR c.s.a.S.s.EmailService [EmailAsync-2] Failed to send email to: hr@saminavi.io with subject: Employee Clock In - sridhar uppu. Exception: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 b68ed32f-947a-4eac-96b7-c36182569848 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+; message exceptions (1) are:
+Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 b68ed32f-947a-4eac-96b7-c36182569848 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 b68ed32f-947a-4eac-96b7-c36182569848 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:47)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:74)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-20 10:48:21,030 ERROR c.s.a.S.s.EmailService [EmailAsync-3] Failed to send email to: swetha@saminavi.io with subject: Team Member Clock In - sridhar uppu. Exception: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 85ce8c92-9137-4866-8e82-fce4a59495b3 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+; message exceptions (1) are:
+Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 85ce8c92-9137-4866-8e82-fce4a59495b3 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 85ce8c92-9137-4866-8e82-fce4a59495b3 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:47)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:74)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-20 10:48:21,036 ERROR c.s.a.S.s.NotificationService [EmailAsync-2] Failed to send HR clock in notification for employee: sridhar.uppu
+2025-06-20 10:48:21,040 ERROR c.s.a.S.s.NotificationService [EmailAsync-3] Failed to send manager clock in notification for employee: sridhar.uppu
+2025-06-20 10:48:33,199 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing POST /api/attendance/clock-in
+2025-06-20 10:48:33,228 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:33,248 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Secured POST /api/attendance/clock-in
+2025-06-20 10:48:33,254 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:48:33,267 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:55:54,849 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-20 10:55:54,865 INFO o.a.j.l.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:55:54,882 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:55:54,896 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2025-06-20 10:55:54,900 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2025-06-20 10:55:54,967 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Starting Saminavi Attendance Application...
+2025-06-20 10:55:55,040 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 19576 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-20 10:55:55,041 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-20 10:55:55,041 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-20 10:55:55,367 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20 10:55:55,367 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2025-06-20 10:55:55,526 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-20 10:55:55,527 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:55:55,528 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-20 10:55:55,528 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-20 10:55:55,555 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-20 10:55:55,555 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 511 ms
+2025-06-20 10:55:55,585 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-20 10:55:55,620 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20 10:55:55,620 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-20 10:55:55,633 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20 10:55:55,635 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2025-06-20 10:55:55,680 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5a201752
+2025-06-20 10:55:55,683 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2025-06-20 10:55:55,687 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20 10:55:55,736 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20 10:55:55,791 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:55:55,998 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ca739c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bad52a1, org.springframework.security.web.context.SecurityContextHolderFilter@730e9594, org.springframework.security.web.header.HeaderWriterFilter@487318d5, org.springframework.web.filter.CorsFilter@3ce6bd5b, org.springframework.security.web.authentication.logout.LogoutFilter@7897eb4a, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@1835d9dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40588cc5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10bd91ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@304de5f1, org.springframework.security.web.session.SessionManagementFilter@63a19821, org.springframework.security.web.access.ExceptionTranslationFilter@2cf3e2c2, org.springframework.security.web.access.intercept.AuthorizationFilter@e188ce]
+2025-06-20 10:55:56,056 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-20 10:55:56,056 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:55:56,067 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-20 10:55:56,070 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 1.086 seconds (process running for 959.29)
+2025-06-20 10:55:56,070 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-20 10:55:56,078 INFO c.s.a.S.c.DataInitializer [restartedMain] Employees already exist, skipping initialization.
+2025-06-20 10:55:56,080 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-06-20 10:55:56,081 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-20 10:56:21,799 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-20 10:56:21,803 INFO o.a.j.l.DirectJDKLog [Thread-7] Stopping ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:56:21,810 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:56:21,811 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2025-06-20 10:56:21,815 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2025-06-20 10:56:21,882 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Starting Saminavi Attendance Application...
+2025-06-20 10:56:21,937 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SaminaviAttendanceApplication using Java 21.0.6 with PID 19576 (D:\Applications\Attendance_app\SaminaviAttendanceApplication\SaminaviAttendanceApplication\target\classes started by User in D:\Applications\Attendance_app)
+2025-06-20 10:56:21,938 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-20 10:56:21,940 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-20 10:56:22,140 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20 10:56:22,164 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2025-06-20 10:56:22,290 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 9080 (http)
+2025-06-20 10:56:22,291 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:56:22,291 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-20 10:56:22,292 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-20 10:56:22,306 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-20 10:56:22,307 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 363 ms
+2025-06-20 10:56:22,332 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
+2025-06-20 10:56:22,363 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20 10:56:22,365 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-20 10:56:22,371 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20 10:56:22,372 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2025-06-20 10:56:22,396 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5536328a
+2025-06-20 10:56:22,396 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2025-06-20 10:56:22,412 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20 10:56:22,464 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20 10:56:22,527 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20 10:56:22,721 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e33893a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@654f8e13, org.springframework.security.web.context.SecurityContextHolderFilter@78d5a998, org.springframework.security.web.header.HeaderWriterFilter@5b15384a, org.springframework.web.filter.CorsFilter@14327322, org.springframework.security.web.authentication.logout.LogoutFilter@89c617e, com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtRequestFilter@27271c77, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7456f5c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@673546d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ed1a844, org.springframework.security.web.session.SessionManagementFilter@12c93630, org.springframework.security.web.access.ExceptionTranslationFilter@502b948b, org.springframework.security.web.access.intercept.AuthorizationFilter@576ba040]
+2025-06-20 10:56:22,766 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-20 10:56:22,766 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9080"]
+2025-06-20 10:56:22,779 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 9080 (http) with context path ''
+2025-06-20 10:56:22,783 INFO o.s.b.StartupInfoLogger [restartedMain] Started SaminaviAttendanceApplication in 0.89 seconds (process running for 986.002)
+2025-06-20 10:56:22,788 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] 
+    select
+        count(*) 
+    from
+        employees e1_0
+2025-06-20 10:56:22,791 INFO c.s.a.S.c.DataInitializer [restartedMain] Employees already exist, skipping initialization.
+2025-06-20 10:56:22,793 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-06-20 10:56:22,794 INFO c.s.a.S.SaminaviAttendanceApplication [restartedMain] Saminavi Attendance Application started successfully!
+2025-06-20 10:58:50,066 INFO o.a.j.l.DirectJDKLog [http-nio-9080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 10:58:50,066 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-20 10:58:50,066 INFO o.s.w.s.FrameworkServlet [http-nio-9080-exec-1] Completed initialization in 0 ms
+2025-06-20 10:58:50,066 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing POST /api/auth/login
+2025-06-20 10:58:50,066 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:58:50,081 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured POST /api/auth/login
+2025-06-20 10:58:50,214 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:58:50,268 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-1] Failed to find user 'sridhar.uppu'
+2025-06-20 10:59:09,623 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Securing POST /api/auth/register
+2025-06-20 10:59:09,624 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:59:09,625 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-4] Secured POST /api/auth/register
+2025-06-20 10:59:09,641 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:09,658 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2025-06-20 10:59:09,674 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0
+2025-06-20 10:59:09,841 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-4] 
+    insert 
+    into
+        employees
+        (email, employee_id, name, password_hash, username) 
+    values
+        (?, ?, ?, ?, ?)
+2025-06-20 10:59:13,084 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Securing POST /api/auth/login
+2025-06-20 10:59:13,088 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:59:13,089 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-3] Secured POST /api/auth/login
+2025-06-20 10:59:13,093 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-3] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,227 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-9080-exec-3] Authenticated user
+2025-06-20 10:59:13,245 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Securing GET /api/attendance/history
+2025-06-20 10:59:13,247 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Securing GET /api/attendance/today
+2025-06-20 10:59:13,259 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,259 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,275 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-6] Secured GET /api/attendance/today
+2025-06-20 10:59:13,280 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-5] Secured GET /api/attendance/history
+2025-06-20 10:59:13,284 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,288 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,302 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-6] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:59:13,308 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-5] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2025-06-20 10:59:13,320 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Securing GET /api/attendance/today
+2025-06-20 10:59:13,324 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Securing GET /api/attendance/history
+2025-06-20 10:59:13,331 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,341 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,349 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-7] Secured GET /api/attendance/today
+2025-06-20 10:59:13,352 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-8] Secured GET /api/attendance/history
+2025-06-20 10:59:13,353 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,357 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:13,364 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-7] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:59:13,369 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-8] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2025-06-20 10:59:14,138 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Securing POST /api/attendance/clock-in
+2025-06-20 10:59:14,145 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:14,157 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-9] Secured POST /api/attendance/clock-in
+2025-06-20 10:59:14,161 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:14,171 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:59:14,181 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-9] 
+    insert 
+    into
+        attendance
+        (clock_in_time, clock_out_time, date, employee_id) 
+    values
+        (?, ?, ?, ?)
+2025-06-20 10:59:14,188 INFO c.s.a.S.s.EmailService [EmailAsync-1] Sending email to: sridhar.uppu@saminavi.io with subject: Clock In Confirmation - sridhar uppu
+2025-06-20 10:59:14,188 INFO c.s.a.S.s.EmailService [EmailAsync-2] Sending email to: hr@saminavi.io with subject: Employee Clock In - sridhar uppu
+2025-06-20 10:59:14,189 INFO c.s.a.S.s.EmailService [EmailAsync-3] Sending email to: swetha@saminavi.io with subject: Team Member Clock In - sridhar uppu
+2025-06-20 10:59:14,190 INFO c.s.a.S.s.NotificationService [http-nio-9080-exec-9] Clock in notifications sent for employee: sridhar.uppu
+2025-06-20 10:59:14,199 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing GET /api/attendance/history
+2025-06-20 10:59:14,200 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing GET /api/attendance/today
+2025-06-20 10:59:14,206 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:14,206 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:14,219 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Secured GET /api/attendance/history
+2025-06-20 10:59:14,220 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Secured GET /api/attendance/today
+2025-06-20 10:59:14,222 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:14,223 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.username=?
+2025-06-20 10:59:14,229 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=? 
+        and a1_0.date=?
+2025-06-20 10:59:14,235 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        a1_0.id,
+        a1_0.clock_in_time,
+        a1_0.clock_out_time,
+        a1_0.date,
+        a1_0.employee_id 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2025-06-20 10:59:14,235 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-1] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.id=?
+2025-06-20 10:59:14,248 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9080-exec-10] 
+    select
+        e1_0.id,
+        e1_0.email,
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.password_hash,
+        e1_0.username 
+    from
+        employees e1_0 
+    where
+        e1_0.id=?
+2025-06-20 10:59:14,263 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9080-exec-10] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee.attendanceRecords: could not initialize proxy - no Session]
+2025-06-20 10:59:14,263 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9080-exec-1] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee.attendanceRecords: could not initialize proxy - no Session]
+2025-06-20 10:59:14,266 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-10] Securing GET /error
+2025-06-20 10:59:14,267 DEBUG o.s.s.w.FilterChainProxy [http-nio-9080-exec-1] Securing GET /error
+2025-06-20 10:59:14,267 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:59:14,268 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-9080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-06-20 10:59:14,268 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-9080-exec-10] Pre-authenticated entry point called. Rejecting access
+2025-06-20 10:59:14,268 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-9080-exec-1] Pre-authenticated entry point called. Rejecting access
+2025-06-20 10:59:16,133 INFO c.s.a.S.s.EmailService [EmailAsync-1] Email sent successfully to: sridhar.uppu@saminavi.io
+2025-06-20 10:59:16,134 INFO c.s.a.S.s.AttendanceService [EmailAsync-1] Clock in email sent successfully to employee: sridhar.uppu
+2025-06-20 10:59:16,248 ERROR c.s.a.S.s.EmailService [EmailAsync-3] Failed to send email to: swetha@saminavi.io with subject: Team Member Clock In - sridhar uppu. Exception: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 8f5bcdd5-8c33-4f83-b999-f5633566da5f Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+; message exceptions (1) are:
+Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 8f5bcdd5-8c33-4f83-b999-f5633566da5f Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 8f5bcdd5-8c33-4f83-b999-f5633566da5f Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:47)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:74)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-20 10:59:16,249 ERROR c.s.a.S.s.EmailService [EmailAsync-2] Failed to send email to: hr@saminavi.io with subject: Employee Clock In - sridhar uppu. Exception: org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 8aeedffd-9d16-49ba-b7c4-a99c7a5f4866 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+; message exceptions (1) are:
+Failed message 1: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 8aeedffd-9d16-49ba-b7c4-a99c7a5f4866 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 421 8aeedffd-9d16-49ba-b7c4-a99c7a5f4866 Error: 421 Error: For testing purposes you can only send emails to sridhar.uppu@saminavi.io that was used to register your Elastic Email account. Please purchase one of our plan options to send emails to your intended recipients.
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:47)
+	at com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmailService.sendEmailAsync(EmailService.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:74)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-20 10:59:16,253 ERROR c.s.a.S.s.NotificationService [EmailAsync-3] Failed to send manager clock in notification for employee: sridhar.uppu
+2025-06-20 10:59:16,253 ERROR c.s.a.S.s.NotificationService [EmailAsync-2] Failed to send HR clock in notification for employee: sridhar.uppu
+2025-06-20 11:44:11,195 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-3 housekeeper] HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=34m48s468ms908µs500ns).
+2025-06-20 13:11:54,100 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-3 housekeeper] HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=13m11s680ms609µs900ns).

@@ -1,0 +1,67 @@
+package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    private EmployeeService employeeService; // Use setter injection
+    private final PasswordEncoder passwordEncoder;
+    private final JwtRequestFilter jwtRequestFilter;
+
+    @Autowired
+    public SecurityConfig(PasswordEncoder passwordEncoder, JwtRequestFilter jwtRequestFilter) {
+        this.passwordEncoder = passwordEncoder;
+        this.jwtRequestFilter = jwtRequestFilter;
+    }
+
+    // Setter method for EmployeeService injection
+    @Autowired
+    public void setEmployeeService(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http.csrf(csrf -> csrf.disable())
+            .authorizeHttpRequests(authorize -> authorize
+                .requestMatchers("/api/auth/**").permitAll() // Allow access to authentication endpoints
+                .anyRequest().authenticated() // Require authentication for other endpoints
+            )
+            .sessionManagement(session -> session
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Use stateless sessions
+            );
+
+        // Add a filter to validate the tokens with every request
+        http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
+
+        return http.build();
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+
+    @Bean
+    public DaoAuthenticationProvider authenticationProvider() {
+        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
+        authProvider.setUserDetailsService(employeeService); // Use the injected employeeService
+        authProvider.setPasswordEncoder(passwordEncoder);
+        return authProvider;
+    }
+}
