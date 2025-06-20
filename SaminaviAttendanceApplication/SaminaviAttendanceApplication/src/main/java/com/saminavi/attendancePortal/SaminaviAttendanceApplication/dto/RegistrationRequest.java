@@ -4,7 +4,6 @@ public class RegistrationRequest {
     private String username;
     private String password;
     private String name;
-    private String employeeId;
     private String email;
 
     // Getters and setters
@@ -30,14 +29,6 @@ public class RegistrationRequest {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
     }
 
     public String getEmail() {

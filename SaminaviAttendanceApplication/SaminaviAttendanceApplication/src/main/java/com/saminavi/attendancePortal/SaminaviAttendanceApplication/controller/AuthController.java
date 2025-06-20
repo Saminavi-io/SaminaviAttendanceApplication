@@ -18,6 +18,7 @@ import com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto.LoginRequ
 import com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto.LoginResponse;
 import com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto.RegistrationRequest;
 import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
+import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -61,14 +62,13 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody RegistrationRequest registrationRequest) {
         try {
-            employeeService.registerEmployee(
-                    registrationRequest.getUsername(),
-                    registrationRequest.getPassword(),
-                    registrationRequest.getName(),
-                    registrationRequest.getEmployeeId(),
-                    registrationRequest.getEmail()
+            Employee employee = employeeService.registerEmployee(
+                registrationRequest.getUsername(),
+                registrationRequest.getPassword(),
+                registrationRequest.getName(),
+                registrationRequest.getEmail()
             );
-            return ResponseEntity.ok("User registered successfully");
+            return ResponseEntity.ok("User registered successfully. Employee ID: " + employee.getEmployeeId());
         } catch (Exception e) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)

@@ -27,6 +27,11 @@ public class EmailService {
      */
     @Async("emailTaskExecutor")
     public CompletableFuture<Boolean> sendEmailAsync(String to, String subject, String text) {
+        return sendEmailAsync(to, subject, text, null);
+    }
+
+    @Async("emailTaskExecutor")
+    public CompletableFuture<Boolean> sendEmailAsync(String to, String subject, String text, String replyTo) {
         try {
             logger.info("Sending email to: {} with subject: {}", to, subject);
             
@@ -35,6 +40,9 @@ public class EmailService {
             message.setTo(to);
             message.setSubject(subject);
             message.setText(text);
+            if (replyTo != null && !replyTo.isEmpty()) {
+                message.setReplyTo(replyTo);
+            }
             
             mailSender.send(message);
             
@@ -42,7 +50,7 @@ public class EmailService {
             return CompletableFuture.completedFuture(true);
             
         } catch (Exception e) {
-            logger.error("Failed to send email to: {} with subject: {}", to, subject, e);
+            logger.error("Failed to send email to: {} with subject: {}. Exception: {}", to, subject, e.toString(), e);
             return CompletableFuture.completedFuture(false);
         }
     }
@@ -51,6 +59,10 @@ public class EmailService {
      * Send email synchronously (for backward compatibility)
      */
     public void sendEmail(String to, String subject, String text) {
+        sendEmail(to, subject, text, null);
+    }
+
+    public void sendEmail(String to, String subject, String text, String replyTo) {
         try {
             logger.info("Sending email to: {} with subject: {}", to, subject);
             
@@ -59,13 +71,16 @@ public class EmailService {
             message.setTo(to);
             message.setSubject(subject);
             message.setText(text);
+            if (replyTo != null && !replyTo.isEmpty()) {
+                message.setReplyTo(replyTo);
+            }
             
             mailSender.send(message);
             
             logger.info("Email sent successfully to: {}", to);
             
         } catch (Exception e) {
-            logger.error("Failed to send email to: {} with subject: {}", to, subject, e);
+            logger.error("Failed to send email to: {} with subject: {}. Exception: {}", to, subject, e.toString(), e);
             throw new RuntimeException("Failed to send email", e);
         }
     }

@@ -41,10 +41,11 @@ public class AttendanceService {
     public Attendance clockIn(String username) {
         Employee employee = employeeRepository.findByUsername(username)
                 .orElseThrow(() -> new RuntimeException("Employee not found"));
-        
         LocalDate today = LocalDate.now();
+        System.out.println("[CLOCK IN DEBUG] Attempting clock-in for employee: " + employee.getUsername() + ", ID: " + employee.getEmployeeId() + ", Date: " + today);
         Attendance existingAttendance = attendanceRepository.findByEmployeeAndDate(employee, today);
         if (existingAttendance != null) {
+            System.out.println("[CLOCK IN DEBUG] Existing attendance found for employee: " + employee.getUsername() + ", Date: " + today);
             throw new RuntimeException("Employee has already clocked in today");
         }
 
