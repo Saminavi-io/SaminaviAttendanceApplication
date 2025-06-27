@@ -1,0 +1,40 @@
+name: Deploy Spring Boot App to WSL2 Ubuntu
+
+on:
+  push:
+    branches: [ next ]  # or your target branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Build JAR
+      run: ./mvnw clean package -DskipTests
+
+    - name: Setup SSH Agent
+      uses: webfactory/ssh-agent@v0.9.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Deploy to WSL2 Ubuntu
+      run: |
+        ssh -o StrictHostKeyChecking=no saminavi@192.168.1.77 << 'EOF'
+          pkill -f 'java -jar' || true
+          rm -f ~/springboot-deploy/app.jar
+        EOF
+
+        scp target/*.jar saminavi@192.168.1.77:~/springboot-deploy/app.jar
+
+        ssh -o StrictHostKeyChecking=no saminavi@192.168.1.77 << 'EOF'
+          nohup java -jar ~/springboot-deploy/app.jar > ~/springboot-deploy/app.log 2>&1 &
+        EOF
