@@ -15,4 +15,3 @@ CREATE TABLE attendance (
 );
 
 
-select * from employees;
